@@ -1,8 +1,9 @@
 'use client';
 import { ClientSideSuspense, RoomProvider } from '@liveblocks/react/suspense'
 import Header from '@/components/Header'
-import { Editor } from '@/components/ui/editor/Editor'
+import { Editor } from './ui/editor/Editor';
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
+
 
 
 const CollaborativeRoom = () => {
@@ -12,7 +13,7 @@ const CollaborativeRoom = () => {
       <div className='collaborative-room'>
       <Header>
         <div className="flex w-fit items-center justify-center gap-2">
-          <p className='document title'>Share</p>
+          <p className='document-title'>Share</p>
         </div>
           <SignedOut>
             <SignInButton />
@@ -21,7 +22,7 @@ const CollaborativeRoom = () => {
             <UserButton />
           </SignedIn>
       </Header>
-
+      <Editor  />
       </div>
     </ClientSideSuspense>
   </RoomProvider>
