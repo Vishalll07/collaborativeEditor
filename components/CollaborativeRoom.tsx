@@ -4,7 +4,7 @@ import Header from '@/components/Header'
 import { Editor } from './ui/editor/Editor';
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
 import ActiveCollaborators from './ActiveCollaborators';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Input } from './ui/input';
 import Image from 'next/image';
 import { updateDocument } from '@/lib/actions/room.actions';
