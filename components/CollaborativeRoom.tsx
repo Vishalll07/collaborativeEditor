@@ -21,7 +21,7 @@ const CollaborativeRoom = ({ roomId, roomMetadata, users , currentUserType  }: C
   const [loading, setLoading] = useState(false);
 
   const containerRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const updateTitleHandler = async (e: React.KeyboardEvent<HTMLInputElement>) => {
 
